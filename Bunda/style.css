@@ -1,0 +1,96 @@
+/* Configurações Globais e Cores Personalizadas */
+:root {
+    --cor-fundo: #f4f7f6;
+    --cor-card: #ffffff;
+    --cor-texto: #333333;
+    --cor-primaria: #0056b3;
+    --cor-secundaria: #007bff;
+    --cor-borda: #e2e2e2;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho e Menu (Desafio do Menu) */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex; /* Flexbox para o menu */
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s; /* Transição suave */
+}
+
+nav a:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Conteúdo Principal e Cartões (Cards) */
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: 30px 0;
+}
+
+.cartao {
+    background-color: var(--cor-card);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra leve */
+    border: 1px solid var(--cor-borda);
+    text-align: center;
+}
+
+/* Listas (Hobbies) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox para alinhar os itens */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+li {
+    background-color: var(--cor-borda);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.05); /* Efeito hover de zoom */
+    background-color: var(--cor-secundaria);
+    color: white;
+}
